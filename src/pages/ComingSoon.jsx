@@ -42,7 +42,7 @@ function PhoneMockup() {
           <div className="phone-xp-card">
             <div className="phone-xp-top">
               <div>
-                <div className="phone-level">⚡ Civic Advocate</div>
+                <div className="phone-level">⚡ The Builder</div>
                 <div className="phone-xp-num">1,840 <span>XP</span></div>
               </div>
               <div className="phone-lvl-badge">Lv 5</div>
@@ -180,7 +180,7 @@ export default function ComingSoon() {
           viewport={{ once: true, margin: '-60px' }}
         >
           {[
-            { num: '01', icon: '🎯', title: 'Find your civic identity', body: 'Start with a Civic Identity Assessment. In minutes you discover your archetype — Advocate, Organizer, Builder, Storyteller, or Diplomat — and unlock a personalized path built around who you actually are.' },
+            { num: '01', icon: '🎯', title: 'Find your civic identity', body: 'Start with a Civic Identity Assessment. Discover your archetype — Operator, Creative, Builder, Analyst, or Connector — and unlock a personalized path built around who you actually are.' },
             { num: '02', icon: '⚡', title: 'Do a daily challenge', body: 'Every day, your AI coach surfaces one challenge matched to your interests and goals. Quiz, vote on real policy, write a reflection, or take a real-world action. Earn XP and level up.' },
             { num: '03', icon: '🌍', title: 'Step into civic life', body: 'Your coach connects what you learn to the real world — setting weekly goals, checking in on your progress, and celebrating when you take actual civic action outside the app.' },
           ].map((step) => (
@@ -227,8 +227,8 @@ export default function ComingSoon() {
             <div className="cs-feature-visual">
               <div className="archetype-label">Your civic archetype</div>
               <div className="archetype-row">
-                {['Advocate','Organizer','Builder','Storyteller','Diplomat'].map((a, i) => (
-                  <span key={a} className={`archetype-tag ${i===1 ? 'active' : ''}`}>{a}</span>
+                {['The Operator','The Creative','The Builder','The Analyst','The Connector'].map((a, i) => (
+                  <span key={a} className={`archetype-tag ${i===2 ? 'active' : ''}`}>{a}</span>
                 ))}
               </div>
               <div className="coach-bubble">
