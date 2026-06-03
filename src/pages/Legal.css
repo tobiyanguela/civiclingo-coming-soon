@@ -128,6 +128,10 @@
 }
 
 @media (max-width: 480px) {
-  .legal-card { padding: 32px 20px; }
-  .legal-card h1 { font-size: 24px; }
+  .legal-page { padding: 24px 16px; }
+  .legal-card { padding: 28px 18px; border-radius: 16px; }
+  .legal-card h1 { font-size: 22px; }
+  .legal-card p, .legal-card li { font-size: 14px; }
+  .legal-table { font-size: 13px; }
+  .legal-table th, .legal-table td { padding: 7px 10px; }
 }

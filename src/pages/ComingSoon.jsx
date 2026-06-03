@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Countdown from '../components/Countdown'
 import WaitlistForm from '../components/WaitlistForm'
+import HamburgerMenu from '../components/HamburgerMenu'
 import logoIcon from '../assets/logo-icon.png'
 import './ComingSoon.css'
 
@@ -112,6 +113,7 @@ export default function ComingSoon() {
             <a href="#features">Features</a>
             <a href="#challenges">Challenges</a>
           </div>
+          <HamburgerMenu />
         </div>
       </motion.nav>
 
