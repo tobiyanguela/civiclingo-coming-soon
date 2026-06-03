@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 
 const TARGET = new Date('2026-07-01T00:00:00')
 
@@ -15,22 +15,29 @@ function getTimeLeft() {
 }
 
 function Unit({ value, label, index }) {
+  const reduce = useReducedMotion()
+
+  const unitAnim = reduce
+    ? {}
+    : {
+        initial: { opacity: 0, y: 20 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] },
+      }
+
+  const numberAnim = reduce
+    ? {}
+    : {
+        initial: { opacity: 0, y: -8 },
+        animate: { opacity: 1, y: 0 },
+        exit:    { opacity: 0, y: 8 },
+        transition: { duration: 0.18 },
+      }
+
   return (
-    <motion.div
-      className="countdown-unit"
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-    >
-      <AnimatePresence mode="popLayout">
-        <motion.span
-          key={value}
-          className="countdown-number"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 10 }}
-          transition={{ duration: 0.2 }}
-        >
+    <motion.div className="countdown-unit" {...unitAnim}>
+      <AnimatePresence mode="wait">
+        <motion.span key={value} className="countdown-number" {...numberAnim}>
           {String(value).padStart(2, '0')}
         </motion.span>
       </AnimatePresence>
@@ -41,12 +48,10 @@ function Unit({ value, label, index }) {
 
 export default function Countdown() {
   const [time, setTime] = useState(getTimeLeft())
-
   useEffect(() => {
     const id = setInterval(() => setTime(getTimeLeft()), 1000)
     return () => clearInterval(id)
   }, [])
-
   return (
     <div className="countdown">
       <Unit value={time.days}    label="days"  index={0} />
