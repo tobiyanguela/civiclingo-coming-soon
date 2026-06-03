@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Countdown from '../components/Countdown'
@@ -85,6 +85,13 @@ function PhoneMockup() {
 export default function ComingSoon() {
   const waitlistRef = useRef(null)
   const reduce = useReducedMotion()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const navAnim   = reduce ? {} : { initial: { opacity: 0, y: -16 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }
   const heroLeft  = reduce ? {} : { initial: { opacity: 0, x: -32 }, animate: { opacity: 1, x: 0 }, transition: { duration: 0.7, ease: [0.22,1,0.36,1] } }
@@ -94,15 +101,17 @@ export default function ComingSoon() {
     <div className="cs-page">
 
       {/* ── NAV ── */}
-      <motion.nav className="cs-nav" {...navAnim}>
-        <div className="cs-logo">
-          <img src={logoIcon} alt="CivicLingo" className="cs-logo-img" loading="lazy" />
-          <span className="cs-logo-name">CivicLingo</span>
-        </div>
-        <div className="cs-nav-links">
-          <a href="#how">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#challenges">Challenges</a>
+      <motion.nav className={`cs-nav${scrolled ? ' cs-nav--scrolled' : ''}`} {...navAnim}>
+        <div className="cs-nav-inner">
+          <div className="cs-logo">
+            <img src={logoIcon} alt="CivicLingo" className="cs-logo-img" loading="lazy" />
+            <span className="cs-logo-name">CivicLingo</span>
+          </div>
+          <div className="cs-nav-links">
+            <a href="#how">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#challenges">Challenges</a>
+          </div>
         </div>
       </motion.nav>
 
@@ -184,7 +193,12 @@ export default function ComingSoon() {
             { num: '02', icon: '⚡', title: 'Do a daily challenge', body: 'Every day, your AI coach surfaces one challenge matched to your interests and goals. Quiz, vote on real policy, write a reflection, or take a real-world action. Earn XP and level up.' },
             { num: '03', icon: '🌍', title: 'Step into civic life', body: 'Your coach connects what you learn to the real world — setting weekly goals, checking in on your progress, and celebrating when you take actual civic action outside the app.' },
           ].map((step) => (
-            <motion.div key={step.num} className="cs-step-card" variants={staggerItem}>
+            <motion.div
+              key={step.num}
+              className="cs-step-card"
+              variants={staggerItem}
+              whileHover={reduce ? {} : { y: -4, borderColor: 'rgba(167,139,250,0.3)', transition: { duration: 0.2 } }}
+            >
               <span className="step-num">{step.num}</span>
               <div className="step-icon">{step.icon}</div>
               <h3 className="step-title">{step.title}</h3>
@@ -245,7 +259,12 @@ export default function ComingSoon() {
             { icon: '👥', title: 'Civic Squads & peer debates', body: 'Form a squad of 3–5 friends, tackle challenges together, and share a collective weekly goal. Peer debates match you with another user to argue opposing civic positions.' },
             { icon: '🔒', title: 'Safe, private, non-partisan', body: 'COPPA-compliant. No ads. Data never sold. CivicLingo teaches how to think about civic issues — not what to think. Non-partisan by design.' },
           ].map(f => (
-            <motion.div key={f.title} className="cs-feature-card" variants={staggerItem}>
+            <motion.div
+              key={f.title}
+              className="cs-feature-card"
+              variants={staggerItem}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.25)', transition: { duration: 0.2 } }}
+            >
               <div className="cs-feature-icon">{f.icon}</div>
               <h3 className="cs-feature-title">{f.title}</h3>
               <p className="cs-feature-body">{f.body}</p>
@@ -270,14 +289,19 @@ export default function ComingSoon() {
           viewport={{ once: true, margin: '-60px' }}
         >
           {[
-            { type: 'quiz',    label: 'Quiz',    title: 'Who actually has the power to change school lunch policy in your district?',                               xp: '+15 XP', tier: 'Tier 1 · Local government' },
+            { type: 'quiz',    label: 'Quiz',    title: 'Who has the power to change school lunch policy in your district?',                               xp: '+15 XP', tier: 'Tier 1 · Local government' },
             { type: 'poll',    label: 'Poll',    title: 'Which approach should cities prioritize to address homelessness?',                                         xp: '+30 XP', tier: 'Tier 2 · Housing policy' },
             { type: 'writing', label: 'Writing', title: 'Observe something in your community that seems unfair. Describe exactly what you see.',                    xp: '+20 XP', tier: 'Tier 1 · Civic awareness' },
             { type: 'quiz',    label: 'Quiz',    title: 'What does it mean when the Supreme Court denies certiorari — and why does it matter?',                     xp: '+40 XP', tier: 'Tier 2 · Judicial process' },
             { type: 'writing', label: 'Writing', title: 'Write your personal civic mission statement — what you care about and how you plan to make a difference.', xp: '+45 XP', tier: 'Tier 2 · Civic identity' },
             { type: 'poll',    label: 'Poll',    title: 'Real change most often happens through — elections, organizing, courts, or storytelling?',                 xp: '+10 XP', tier: 'Tier 1 · Civic strategy' },
           ].map(c => (
-            <motion.div key={c.title} className="cs-challenge-card" variants={staggerItem}>
+            <motion.div
+              key={c.title}
+              className="cs-challenge-card"
+              variants={staggerItem}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.2)', transition: { duration: 0.18 } }}
+            >
               <span className={`cs-challenge-type cs-challenge-type--${c.type}`}>{c.label}</span>
               <p className="cs-challenge-title">{c.title}</p>
               <div className="cs-challenge-bottom">
