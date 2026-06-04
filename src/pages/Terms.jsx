@@ -29,7 +29,8 @@ export default function Terms() {
         <section>
           <h2>1. Acceptance of Terms</h2>
           <p>These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Civics Unplugged and The Motiff Group Inc. (collectively "CivicLingo," "we," "us," or "our"), governing your access to and use of the CivicLingo platform, including our mobile application (iOS and Android), web application, and all related services.</p>
-          <p>By creating an account or using the platform in any way, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree, you must not access or use the platform. For users ages 15–17, a parent or guardian must review and be aware of these Terms.</p>
+          <p>By creating an account or using the platform in any way, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree, you must not access or use the platform.</p>
+          <p><strong>Important — Minor Users (Ages 15–17):</strong> A minor cannot enter into a legally binding contract under U.S. law. If you are between 15 and 17 years of age, your parent or legal guardian must read, accept, and agree to these Terms on your behalf. By allowing a minor to use the platform, the parent or legal guardian agrees to be bound by these Terms and accepts full legal responsibility for the minor's use of CivicLingo. CivicLingo reserves the right to require written parental consent before granting access to minor users.</p>
         </section>
 
         <section>
@@ -42,7 +43,7 @@ export default function Terms() {
             <li>You must not be prohibited from using the platform under applicable U.S. law.</li>
             <li>You must not have had a previous account terminated for violation of these Terms.</li>
           </ul>
-          <p>CivicLingo is designed for civic leaders — high school students, college students, young professionals, and adults up to approximately 30 years of age who are building their civic identity and leadership skills. The platform is operated by Civics Unplugged, a 501(c)(3) nonprofit organization.</p>
+          <p>CivicLingo is designed for civic leaders — high school students, college students, young professionals, and engaged adults who are building their civic identity and leadership skills. The platform is operated by Civics Unplugged, a 501(c)(3) nonprofit organization.</p>
         </section>
 
         <section>
@@ -82,7 +83,7 @@ export default function Terms() {
             <li><strong>Restricted peer interactions:</strong> Minor users may not engage in open chat with other users. All peer interactions are AI-facilitated and moderated.</li>
             <li><strong>Non-discoverable profiles:</strong> Minor user profiles are not publicly discoverable within the platform.</li>
             <li><strong>Enhanced content moderation:</strong> All content involving minor users undergoes automated and human review.</li>
-            <li><strong>No adult-initiated contact:</strong> Users 18 or older may not initiate direct contact with users ages 15–17. Any attempt to do so will result in immediate account termination and may be reported to law enforcement.</li>
+            <li><strong>No adult-initiated contact:</strong> Users 18 or older may not initiate direct contact with users ages 15–17. Any attempt to do so will result in immediate account termination and <strong>will be reported to law enforcement</strong>. CivicLingo complies with all applicable mandatory reporting obligations under federal and state law regarding the safety of minors.</li>
             <li><strong>Data minimization:</strong> We collect only the minimum information necessary for minor users to participate in the platform.</li>
             <li><strong>Parental access:</strong> Parents or guardians of minor users may request full review, modification, or deletion of their child's account and data at any time by contacting <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>.</li>
           </ul>
@@ -131,7 +132,7 @@ export default function Terms() {
             <li>Creating multiple accounts to circumvent bans or subscription limitations.</li>
             <li>Attempting to identify, locate, or contact minor users outside the platform.</li>
           </ul>
-          <p>Violations involving the safety of minor users will be reported to relevant authorities without prior notice.</p>
+          <p>Violations involving the safety of minor users — including but not limited to solicitation, exploitation, or any attempt to identify or contact a minor outside the platform — <strong>will be reported to relevant law enforcement authorities</strong> without prior notice to the offending user. CivicLingo has a zero-tolerance policy for conduct that endangers minors.</p>
         </section>
 
         <section>
@@ -142,8 +143,8 @@ export default function Terms() {
             <li><strong>Encryption at rest:</strong> Sensitive data stored in our systems is encrypted using AES-256.</li>
             <li><strong>Password security:</strong> Passwords are hashed using bcrypt and never stored in plaintext.</li>
             <li><strong>Access controls:</strong> Only authorized personnel with documented need can access user data. All access is logged and audited.</li>
-            <li><strong>Infrastructure:</strong> Our platform is hosted on cloud infrastructure that meets SOC 2 Type II compliance standards.</li>
-            <li><strong>Breach notification:</strong> In the event of a data breach affecting your personal information, we will notify you within 72 hours of becoming aware, in accordance with applicable law.</li>
+            <li><strong>Infrastructure:</strong> Our platform is hosted on cloud infrastructure providers that maintain SOC 2 Type II compliance standards.</li>
+            <li><strong>Breach notification:</strong> In the event of a data breach affecting your personal information, we will notify you without undue delay and as required by applicable law.</li>
           </ul>
           <p>To report a security vulnerability, contact <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We take all security reports seriously and respond within 24 hours.</p>
         </section>
@@ -237,7 +238,17 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>23. Updates to Terms</h2>
+          <h2>23. Severability</h2>
+          <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision shall be modified to the minimum extent necessary to make it enforceable, or severed from these Terms if modification is not possible. The remaining provisions shall continue in full force and effect. The invalidity of one provision does not affect the validity of the rest of these Terms.</p>
+        </section>
+
+        <section>
+          <h2>24. Entire Agreement</h2>
+          <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and CivicLingo regarding your use of the platform and supersede all prior agreements, understandings, representations, and warranties, whether written or oral, relating to the subject matter herein. No waiver by CivicLingo of any breach of these Terms shall be deemed a waiver of any subsequent breach.</p>
+        </section>
+
+        <section>
+          <h2>25. Updates to Terms</h2>
           <p>We reserve the right to modify these Terms at any time. For material changes, we will notify you via email and/or in-app notification at least 14 days before changes take effect. For changes that materially affect minor users, we will also notify parents or guardians who have registered for notifications. Your continued use after the effective date constitutes acceptance.</p>
         </section>
       </div>

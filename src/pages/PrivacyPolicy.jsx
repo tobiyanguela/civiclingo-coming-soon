@@ -24,13 +24,26 @@ export default function PrivacyPolicy() {
         </div>
 
         <p className="legal-summary">
-          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for civic leaders ages 15 and older, operated by Civics Unplugged, a 501(c)(3) nonprofit. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, show ads, or share your information with third parties for commercial purposes. Users ages 15–17 receive additional protections: restricted peer interactions, non-discoverable profiles, enhanced moderation, and full parental control rights. These policies are published in preparation for the CivicLingo app launch and describe our planned privacy practices.
+          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for civic leaders ages 15 and older, operated by Civics Unplugged, a 501(c)(3) nonprofit. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, show ads, or share your information for commercial purposes. Users ages 15–17 are minors under U.S. law — their parent or legal guardian agrees to our Terms and Privacy Policy on their behalf and retains full parental control rights. These policies currently apply to our waitlist and describe our planned practices for the full app launch.
         </p>
 
         <section>
           <h2>1. Who We Are</h2>
           <p>CivicLingo is a civic education and development platform operated by Civics Unplugged, a nonprofit organization dedicated to empowering the next generation of civic leaders. CivicLingo is available as a mobile application on Android and iOS.</p>
-          <p>"We," "us," and "our" refer to Civics Unplugged and the CivicLingo platform. "You" refers to any person who creates an account or uses the CivicLingo app.</p>
+          <p>"We," "us," and "our" refer to Civics Unplugged and the CivicLingo platform. "You" refers to any person who creates an account, uses the CivicLingo app, or joins our pre-launch waitlist.</p>
+        </section>
+
+        <section>
+          <h2>2. Waitlist Data Collection (Pre-Launch)</h2>
+          <p>This Privacy Policy currently applies to data collected through our pre-launch coming soon page, including the CivicLingo waitlist. <strong>We are actively collecting email addresses today</strong> for the purpose of notifying interested users when the app launches.</p>
+          <ul>
+            <li><strong>What we collect:</strong> Your email address only.</li>
+            <li><strong>Why we collect it:</strong> To notify you when CivicLingo launches and to send you relevant product updates. We will never use your waitlist email for any other purpose.</li>
+            <li><strong>How it is stored:</strong> Waitlist emails are stored securely using industry-standard encryption. We do not share them with third parties.</li>
+            <li><strong>How long we keep it:</strong> Until the app launches and you create an account, or until you request removal — whichever comes first.</li>
+            <li><strong>Your rights:</strong> You may request removal from the waitlist at any time by contacting <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We will delete your email within 7 business days of your request.</li>
+          </ul>
+          <p>By submitting your email to the waitlist, you acknowledge and agree to this limited use of your data as described above.</p>
         </section>
 
         <section>
@@ -164,7 +177,7 @@ export default function PrivacyPolicy() {
             <li><strong>Secure authentication:</strong> Passwords are hashed using bcrypt and never stored in plaintext. Sign in with Apple and Google are supported as secure alternatives.</li>
             <li><strong>Access controls:</strong> Only authorized personnel with a documented need can access user data. All access is logged, audited, and reviewed periodically.</li>
             <li><strong>Minor data isolation:</strong> Data belonging to users ages 15–17 is stored with additional access restrictions and is accessible only to personnel with explicit minor-data authorization.</li>
-            <li><strong>Infrastructure security:</strong> Our platform is hosted on cloud infrastructure that meets SOC 2 Type II compliance standards.</li>
+            <li><strong>Infrastructure security:</strong> Our platform is hosted on cloud infrastructure providers that maintain SOC 2 Type II compliance standards.</li>
           </ul>
           <h3>8.2 Organizational Safeguards</h3>
           <ul>
@@ -173,7 +186,7 @@ export default function PrivacyPolicy() {
             <li>Third-party vendors are vetted for security practices and prohibited from accessing minor user data without specific authorization.</li>
           </ul>
           <h3>8.3 Breach Notification</h3>
-          <p>In the event of a data breach affecting your personal information, we will notify you via email and in-app notification within 72 hours of becoming aware. For breaches affecting minor user data, we will also notify registered parents or guardians and relevant authorities as required by law.</p>
+          <p>In the event of a data breach affecting your personal information, we will notify you without undue delay and as required by applicable law. For breaches affecting minor user data, we will also notify registered parents or guardians and relevant authorities as required by law.</p>
           <h3>8.4 Reporting Security Issues</h3>
           <p>To report a security vulnerability, contact <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We take all security reports seriously and respond within 24 hours. We do not pursue legal action against researchers who report vulnerabilities in good faith.</p>
         </section>
