@@ -18,12 +18,12 @@ export default function PrivacyPolicy() {
         <div className="legal-badges">
           <span>No data sales</span>
           <span>No ads</span>
-          <span>Youth safety first</span>
+          <span>Ages 15+</span>
           <span>Encrypted in transit</span>
         </div>
 
         <p className="legal-summary">
-          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based app for users ages 15–22. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, we do not show ads, and we comply with COPPA and CCPA. Users ages 15–17 receive additional protections including restricted peer interactions and parental access rights.
+          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for young people ages 15–22. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, we do not show ads, and we comply with applicable U.S. privacy law. Users ages 15–17 receive additional protections including restricted peer interactions and parental access rights.
         </p>
 
         <section>
@@ -107,9 +107,9 @@ export default function PrivacyPolicy() {
           <h2>5. Youth Safety & Minor Protections</h2>
           <p>Youth safety is a foundational design principle of CivicLingo. CivicLingo serves users aged 15–22, spanning both minors (15–17) and young adults (18–22). We apply differentiated protections based on age group.</p>
           <h3>5.1 Age Requirements & Age Gate</h3>
-          <p>CivicLingo is available to users aged 15 and older. Users who indicate they are under 15 are not permitted to create an account. We do not knowingly collect personal information from children under 13 in compliance with COPPA. If we become aware that a user is under 13, we will immediately delete their account and all associated data.</p>
-          <h3>5.2 Parental Consent — Users Ages 15–17</h3>
-          <p>CivicLingo strongly recommends parental awareness and consent for users in the 15–17 age group. We provide a dedicated parental notification flow during onboarding for users who identify as minors. Parents or guardians may contact us at any time to review, modify, or delete their child's account and data.</p>
+          <p>CivicLingo is available to users aged 15 and older. Users who indicate they are under 15 are not permitted to create an account and will not have their information retained. We do not knowingly collect personal information from anyone under 15.</p>
+          <h3>5.2 Parental Awareness — Users Ages 15–17</h3>
+          <p>CivicLingo strongly recommends parental awareness and consent for users in the 15–17 age group. We provide a dedicated parental notification flow during onboarding for users who identify as minors. Parents or guardians may contact us at any time to review, modify, or delete their child's account and data at <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a>.</p>
           <h3>5.3 Differentiated Protections by Age Group</h3>
           <div className="legal-table">
             <table>
@@ -128,8 +128,8 @@ export default function PrivacyPolicy() {
               </tbody>
             </table>
           </div>
-          <h3>5.4 COPPA Compliance</h3>
-          <p>CivicLingo complies with the Children's Online Privacy Protection Act (COPPA). We do not direct our service to children under 13, do not knowingly collect their personal information, and do not require more information than is reasonably necessary. If you believe a child under 13 has created an account, please contact us immediately at <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>.</p>
+          <h3>5.4 Minimum Age Commitment</h3>
+          <p>CivicLingo's minimum age is 15. We do not knowingly collect information from users under 15, and we do not require more information than is reasonably necessary to participate. If you believe someone under 15 has created an account, please contact us immediately at <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>.</p>
           <h3>5.5 Reporting Safety Concerns</h3>
           <p>If you encounter content or behavior that feels unsafe, you can report it within the app or by emailing <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>. We respond to all safety reports within 48 hours.</p>
         </section>
@@ -233,8 +233,8 @@ export default function PrivacyPolicy() {
 
         <section>
           <h2>11. U.S. Legal Compliance</h2>
-          <h3>11.1 COPPA — Children's Online Privacy Protection Act</h3>
-          <p>CivicLingo complies fully with COPPA. We do not knowingly collect personal information from children under 13. Our minimum age requirement of 15 provides an additional safety buffer above the federal threshold.</p>
+          <h3>11.1 Minimum Age & U.S. Privacy Law</h3>
+          <p>CivicLingo's minimum age requirement is 15. We do not knowingly collect personal information from users under 15. We comply with applicable U.S. federal and state privacy laws. Our platform is not directed at children under 15 and we take commercially reasonable steps to prevent registration by underage users.</p>
           <h3>11.2 California Residents — CCPA</h3>
           <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):</p>
           <ul>
