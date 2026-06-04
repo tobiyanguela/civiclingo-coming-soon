@@ -216,14 +216,14 @@ export default function Terms() {
           <h3>19.1 Informal Resolution</h3>
           <p>Before initiating any formal dispute, contact us at <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a> and give us 30 days to resolve the issue informally.</p>
           <h3>19.2 Binding Arbitration</h3>
-          <p>Unresolved disputes will be settled through binding individual arbitration under the rules of the American Arbitration Association (AAA), conducted in English in the state where Civics Unplugged is incorporated. Arbitration is available only to adult users (18+). Disputes involving minor users shall be resolved in accordance with applicable state law.</p>
+          <p>Unresolved disputes will be settled through binding individual arbitration under the rules of the American Arbitration Association (AAA), conducted in English in New York County, State of New York, United States. Arbitration is available only to adult users (18+). Disputes involving minor users shall be resolved in accordance with the laws of the State of New York.</p>
           <h3>19.3 Class Action Waiver</h3>
           <p><strong>You and CivicLingo waive the right to bring or participate in any class action lawsuit or class-wide arbitration.</strong> All disputes must be resolved on an individual basis. This waiver does not apply where prohibited by applicable law.</p>
         </section>
 
         <section>
           <h2>20. Governing Law</h2>
-          <p>These Terms are governed by the laws of the United States and the state in which Civics Unplugged is incorporated, without regard to conflict of law provisions.</p>
+          <p>These Terms are governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. Any disputes not subject to arbitration shall be resolved exclusively in the state or federal courts located in New York County, New York, and you consent to personal jurisdiction in those courts.</p>
         </section>
 
         <section>

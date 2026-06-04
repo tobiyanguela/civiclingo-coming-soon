@@ -291,7 +291,13 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2>13. Contact Us</h2>
+          <h2>13. Governing Law & Jurisdiction</h2>
+          <p>This Privacy Policy is governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. CivicLingo is operated by Civics Unplugged, a nonprofit organization based in New York. By using the platform or submitting your information to our waitlist, you consent to the jurisdiction of the state and federal courts located in New York County, New York for any disputes arising from this Privacy Policy.</p>
+          <p>If you are located outside the United States, please be aware that your data will be transferred to, stored, and processed in the United States, subject to U.S. and New York State law.</p>
+        </section>
+
+        <section>
+          <h2>14. Contact Us</h2>
           <p>Privacy requests and general questions: <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a></p>
           <p>Safety concerns and minor protection issues: <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a></p>
           <p>We aim to respond to all privacy requests within 30 days and all safety reports within 48 hours.</p>
