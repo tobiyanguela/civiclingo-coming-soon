@@ -75,7 +75,7 @@
   gap: 80px;
   width: 100%;
   max-width: 1140px;
-  padding: var(--sp-24) var(--sp-6) var(--sp-20);
+  padding: var(--sp-12) var(--sp-6) var(--sp-20);
 }
 .cs-hero-left { flex: 1; }
 .cs-hero-right { flex-shrink: 0; }
