@@ -128,7 +128,7 @@ export default function ComingSoon() {
             Civic education,<br /><em>reimagined.</em>
           </h1>
           <p className="cs-subtitle">
-            The app built to help the next generation understand, engage with, and lead in civic life — one daily challenge at a time.
+            The app built to help civic leaders ages 15 and up understand, engage with, and lead in civic life — one daily challenge at a time.
           </p>
           <div className="cs-ctas">
             <motion.button

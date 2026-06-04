@@ -16,14 +16,14 @@ export default function Terms() {
         <p className="legal-date">Effective Date: June 1, 2026 · Last Updated: June 1, 2026</p>
 
         <div className="legal-badges">
-          <span>Ages 15–22</span>
+          <span>Ages 15+</span>
           <span>Safety first</span>
           <span>AI coaching tool only</span>
           <span>U.S.-based service</span>
         </div>
 
         <p className="legal-summary">
-          <strong>Plain English Summary:</strong> These Terms govern your use of CivicLingo, a civic education and leadership platform for young people ages 15–22. By creating an account you agree to use the platform responsibly, respect other users, and understand that our AI coach (Nova) is a personal development tool — not a licensed therapist, doctor, or legal advisor. Users ages 15–17 are considered minors and receive additional protections, including parental controls and restricted peer interactions. These terms are published in preparation for the CivicLingo app launch and describe our planned policies and features.
+          <strong>Plain English Summary:</strong> These Terms govern your use of CivicLingo, a civic education and leadership platform for civic leaders ages 15 and older. By creating an account you agree to use the platform responsibly, respect other users, and understand that our AI coach (Nova) is a personal development tool — not a licensed therapist, doctor, or legal advisor. Users ages 15–17 are considered minors and receive additional protections, including parental controls and restricted peer interactions. These terms are published in preparation for the CivicLingo app launch and describe our planned policies and features.
         </p>
 
         <section>
@@ -36,13 +36,13 @@ export default function Terms() {
           <h2>2. Eligibility Requirements</h2>
           <p>To use CivicLingo, you must meet all of the following requirements:</p>
           <ul>
-            <li>You must be between <strong>15 and 22 years of age</strong>. CivicLingo is designed specifically for this age group and is not intended for users outside this range.</li>
+            <li>You must be at least <strong>15 years of age</strong>. CivicLingo is designed for civic leaders ages 15 and older.</li>
             <li>Users ages 15–17 must have parental or guardian awareness. We provide a parental notification flow during onboarding and strongly recommend parental review of these Terms.</li>
             <li>You must be a human individual. Accounts created by bots or automated tools are prohibited.</li>
             <li>You must not be prohibited from using the platform under applicable U.S. law.</li>
             <li>You must not have had a previous account terminated for violation of these Terms.</li>
           </ul>
-          <p>CivicLingo is designed for young civic leaders — high school upperclassmen, college students, and young adults ages 15–22 who are building their civic identity and leadership skills. The platform is operated by Civics Unplugged, a 501(c)(3) nonprofit organization.</p>
+          <p>CivicLingo is designed for civic leaders — high school students, college students, young professionals, and adults up to approximately 30 years of age who are building their civic identity and leadership skills. The platform is operated by Civics Unplugged, a 501(c)(3) nonprofit organization.</p>
         </section>
 
         <section>

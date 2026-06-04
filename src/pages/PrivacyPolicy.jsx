@@ -18,13 +18,13 @@ export default function PrivacyPolicy() {
         <div className="legal-badges">
           <span>No data sales</span>
           <span>No ads</span>
-          <span>Ages 15–22</span>
+          <span>Ages 15+</span>
           <span>Parental controls</span>
           <span>Encrypted in transit</span>
         </div>
 
         <p className="legal-summary">
-          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for young people ages 15–22, operated by Civics Unplugged, a 501(c)(3) nonprofit. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, show ads, or share your information with third parties for commercial purposes. Users ages 15–17 receive additional protections: restricted peer interactions, non-discoverable profiles, enhanced moderation, and full parental control rights. These policies are published in preparation for the CivicLingo app launch and describe our planned privacy practices.
+          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for civic leaders ages 15 and older, operated by Civics Unplugged, a 501(c)(3) nonprofit. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, show ads, or share your information with third parties for commercial purposes. Users ages 15–17 receive additional protections: restricted peer interactions, non-discoverable profiles, enhanced moderation, and full parental control rights. These policies are published in preparation for the CivicLingo app launch and describe our planned privacy practices.
         </p>
 
         <section>
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
 
         <section>
           <h2>5. Youth Safety & Minor Protections</h2>
-          <p>Youth safety is a foundational design principle of CivicLingo. CivicLingo serves users aged 15–22, spanning both minors (15–17) and young adults (18–22). We apply differentiated protections based on age group.</p>
+          <p>Youth safety is a foundational design principle of CivicLingo. CivicLingo serves users aged 15 and older, including minors (15–17) and adults (18+). We apply differentiated protections based on age group.</p>
           <h3>5.1 Age Requirements & Age Gate</h3>
           <p>CivicLingo is available to users aged 15 and older. Users who indicate they are under 15 are not permitted to create an account and will not have their information retained. We do not knowingly collect personal information from anyone under 15.</p>
           <h3>5.2 Parental Awareness — Users Ages 15–17</h3>
