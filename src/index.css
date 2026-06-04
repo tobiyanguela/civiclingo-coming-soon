@@ -67,6 +67,11 @@ body {
 a { color: var(--accent-mid); text-decoration: none; }
 a:hover { color: var(--accent-light); }
 
+/* Legal pages override — light theme */
+body:has(.legal-page) {
+  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%) !important;
+}
+
 /* ── Global touch targets ── */
 button, a { min-height: 44px; }
 
