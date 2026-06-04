@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
           <h3>5.1 Age Requirements & Age Gate</h3>
           <p>CivicLingo is available to users aged 15 and older. Users who indicate they are under 15 are not permitted to create an account and will not have their information retained. We do not knowingly collect personal information from anyone under 15.</p>
           <h3>5.2 Parental Awareness — Users Ages 15–17</h3>
-          <p>CivicLingo strongly recommends parental awareness and consent for users in the 15–17 age group. We provide a dedicated parental notification flow during onboarding for users who identify as minors. Parents or guardians may contact us at any time to review, modify, or delete their child's account and data at <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a>.</p>
+          <p>CivicLingo strongly recommends parental awareness and consent for users in the 15–17 age group. We provide a dedicated parental notification flow during onboarding for users who identify as minors. Parents or guardians may contact us at any time to review, modify, or delete their child's account and data at <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>.</p>
           <h3>5.3 Differentiated Protections by Age Group</h3>
           <div className="legal-table">
             <table>
@@ -130,14 +130,14 @@ export default function PrivacyPolicy() {
             </table>
           </div>
           <h3>5.4 Minimum Age Commitment</h3>
-          <p>CivicLingo's minimum age is 15. We do not knowingly collect information from users under 15, and we do not require more information than is reasonably necessary to participate. If you believe someone under 15 has created an account, please contact us immediately at <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>.</p>
+          <p>CivicLingo's minimum age is 15. We do not knowingly collect information from users under 15, and we do not require more information than is reasonably necessary to participate. If you believe someone under 15 has created an account, please contact us immediately at <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>.</p>
           <h3>5.5 Reporting Safety Concerns</h3>
-          <p>If you encounter content or behavior that feels unsafe, report it within the app or by emailing <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>. We respond to all safety reports within 48 hours, and to reports involving minors within 24 hours.</p>
+          <p>If you encounter content or behavior that feels unsafe, report it within the app or by emailing <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We respond to all safety reports within 48 hours, and to reports involving minors within 24 hours.</p>
         </section>
 
         <section>
           <h2>6. Parental Controls</h2>
-          <p>For users ages 15–17, CivicLingo provides the following parental control rights. To exercise any of these rights, contact <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a> with subject "Parental Control Request" and proof of your relationship to the minor account holder. We respond within 5 business days.</p>
+          <p>For users ages 15–17, CivicLingo provides the following parental control rights. To exercise any of these rights, contact <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a> with subject "Parental Control Request" and proof of your relationship to the minor account holder. We respond within 5 business days.</p>
           <div className="legal-table">
             <table>
               <thead><tr><th>Parental Right</th><th>What It Means</th></tr></thead>
@@ -175,7 +175,7 @@ export default function PrivacyPolicy() {
           <h3>8.3 Breach Notification</h3>
           <p>In the event of a data breach affecting your personal information, we will notify you via email and in-app notification within 72 hours of becoming aware. For breaches affecting minor user data, we will also notify registered parents or guardians and relevant authorities as required by law.</p>
           <h3>8.4 Reporting Security Issues</h3>
-          <p>To report a security vulnerability, contact <a href="mailto:security@civiclingo.com">security@civiclingo.com</a>. We take all security reports seriously and respond within 24 hours. We do not pursue legal action against researchers who report vulnerabilities in good faith.</p>
+          <p>To report a security vulnerability, contact <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We take all security reports seriously and respond within 24 hours. We do not pursue legal action against researchers who report vulnerabilities in good faith.</p>
         </section>
 
         <section>
@@ -208,7 +208,7 @@ export default function PrivacyPolicy() {
               </tbody>
             </table>
           </div>
-          <p>To exercise any of these rights, contact us at <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a>. We will respond within 30 days.</p>
+          <p>To exercise any of these rights, contact us at <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a>. We will respond within 30 days.</p>
           <h3>8.1 Account Deletion</h3>
           <p>You can delete your account at any time from Settings → Account → Delete Account. Your personal data will be permanently removed within 30 days, except where retention is required by law.</p>
           <h3>8.2 Notifications</h3>
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
             <li><strong>Right to Opt-Out:</strong> We do not sell personal information. There is nothing to opt out of.</li>
             <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any CCPA rights.</li>
           </ul>
-          <p>To exercise your CCPA rights, contact <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a> with the subject line "CCPA Request."</p>
+          <p>To exercise your CCPA rights, contact <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a> with the subject line "CCPA Request."</p>
           <h3>11.3 Service Availability</h3>
           <p>CivicLingo is currently available exclusively in the United States. If you are accessing the app from outside the United States, please be aware that your data will be stored and processed in the U.S., subject to U.S. law.</p>
         </section>
@@ -279,8 +279,8 @@ export default function PrivacyPolicy() {
 
         <section>
           <h2>13. Contact Us</h2>
-          <p>Privacy requests and general questions: <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a></p>
-          <p>Safety concerns and minor protection issues: <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a></p>
+          <p>Privacy requests and general questions: <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a></p>
+          <p>Safety concerns and minor protection issues: <a href="mailto:contact@civiclingo.com">contact@civiclingo.com</a></p>
           <p>We aim to respond to all privacy requests within 30 days and all safety reports within 48 hours.</p>
         </section>
       </div>
