@@ -18,12 +18,13 @@ export default function PrivacyPolicy() {
         <div className="legal-badges">
           <span>No data sales</span>
           <span>No ads</span>
-          <span>Ages 15+</span>
+          <span>Ages 15–22</span>
+          <span>Parental controls</span>
           <span>Encrypted in transit</span>
         </div>
 
         <p className="legal-summary">
-          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for young people ages 15–22. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, we do not show ads, and we comply with applicable U.S. privacy law. Users ages 15–17 receive additional protections including restricted peer interactions and parental access rights.
+          <strong>Plain English Summary:</strong> CivicLingo is a U.S.-based civic education app for young people ages 15–22, operated by Civics Unplugged, a 501(c)(3) nonprofit. We collect only what's necessary to run the app — your name, email, and app activity. We do not sell your data, show ads, or share your information with third parties for commercial purposes. Users ages 15–17 receive additional protections: restricted peer interactions, non-discoverable profiles, enhanced moderation, and full parental control rights. These policies are published in preparation for the CivicLingo app launch and describe our planned privacy practices.
         </p>
 
         <section>
@@ -131,31 +132,54 @@ export default function PrivacyPolicy() {
           <h3>5.4 Minimum Age Commitment</h3>
           <p>CivicLingo's minimum age is 15. We do not knowingly collect information from users under 15, and we do not require more information than is reasonably necessary to participate. If you believe someone under 15 has created an account, please contact us immediately at <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>.</p>
           <h3>5.5 Reporting Safety Concerns</h3>
-          <p>If you encounter content or behavior that feels unsafe, you can report it within the app or by emailing <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>. We respond to all safety reports within 48 hours.</p>
+          <p>If you encounter content or behavior that feels unsafe, report it within the app or by emailing <a href="mailto:safety@civiclingo.com">safety@civiclingo.com</a>. We respond to all safety reports within 48 hours, and to reports involving minors within 24 hours.</p>
         </section>
 
         <section>
-          <h2>6. Data Security</h2>
-          <h3>6.1 Technical Safeguards</h3>
+          <h2>6. Parental Controls</h2>
+          <p>For users ages 15–17, CivicLingo provides the following parental control rights. To exercise any of these rights, contact <a href="mailto:privacy@civiclingo.com">privacy@civiclingo.com</a> with subject "Parental Control Request" and proof of your relationship to the minor account holder. We respond within 5 business days.</p>
+          <div className="legal-table">
+            <table>
+              <thead><tr><th>Parental Right</th><th>What It Means</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Account review</strong></td><td>Request a full summary of your child's activity, challenges, and AI coach interactions.</td></tr>
+                <tr><td><strong>Feature restriction</strong></td><td>Disable peer matching, AI coaching, or any specific platform feature for your child's account.</td></tr>
+                <tr><td><strong>Data access</strong></td><td>Request a copy of all personal data collected about your child.</td></tr>
+                <tr><td><strong>Data correction</strong></td><td>Request correction of inaccurate information in your child's account.</td></tr>
+                <tr><td><strong>Account deletion</strong></td><td>Request immediate deletion of your child's account and all associated data.</td></tr>
+                <tr><td><strong>Notification opt-in</strong></td><td>Receive notifications about your child's platform activity and any safety events.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Automatic minor protections (no parental action required): non-discoverable profiles, AI-facilitated peer interactions only, enhanced content moderation, no adult-initiated contact, and strict data minimization.</p>
+        </section>
+
+        <section>
+          <h2>8. Data Security</h2>
+          <p>Security is a foundational design principle of CivicLingo — particularly given our young user base. We apply additional security measures for data belonging to users ages 15–17.</p>
+          <h3>8.1 Technical Safeguards</h3>
           <ul>
             <li><strong>Encryption in transit:</strong> All data transmitted between your device and our servers is encrypted using TLS 1.2 or higher.</li>
-            <li><strong>Encryption at rest:</strong> Sensitive data stored in our databases is encrypted using AES-256.</li>
-            <li><strong>Secure authentication:</strong> Passwords are hashed using bcrypt. Sign in with Apple and Google are supported as secure alternatives.</li>
-            <li><strong>Access controls:</strong> Only authorized personnel with a documented need can access user data. Access is logged and audited.</li>
+            <li><strong>Encryption at rest:</strong> All user data stored in our databases is encrypted using AES-256.</li>
+            <li><strong>Secure authentication:</strong> Passwords are hashed using bcrypt and never stored in plaintext. Sign in with Apple and Google are supported as secure alternatives.</li>
+            <li><strong>Access controls:</strong> Only authorized personnel with a documented need can access user data. All access is logged, audited, and reviewed periodically.</li>
+            <li><strong>Minor data isolation:</strong> Data belonging to users ages 15–17 is stored with additional access restrictions and is accessible only to personnel with explicit minor-data authorization.</li>
             <li><strong>Infrastructure security:</strong> Our platform is hosted on cloud infrastructure that meets SOC 2 Type II compliance standards.</li>
           </ul>
-          <h3>6.2 Organizational Safeguards</h3>
+          <h3>8.2 Organizational Safeguards</h3>
           <ul>
-            <li>All team members with access to user data are trained on privacy and security practices.</li>
-            <li>We conduct periodic security reviews of our infrastructure and codebase.</li>
-            <li>Third-party vendors are vetted for security practices before being granted any access.</li>
+            <li>All team members with access to user data complete mandatory privacy and security training, including child safety protocols.</li>
+            <li>We conduct periodic security reviews and penetration testing of our infrastructure and codebase.</li>
+            <li>Third-party vendors are vetted for security practices and prohibited from accessing minor user data without specific authorization.</li>
           </ul>
-          <h3>6.3 Breach Notification</h3>
-          <p>In the event of a data breach affecting your personal information, we will notify you via email and in-app notification within 72 hours of becoming aware, in accordance with applicable law.</p>
+          <h3>8.3 Breach Notification</h3>
+          <p>In the event of a data breach affecting your personal information, we will notify you via email and in-app notification within 72 hours of becoming aware. For breaches affecting minor user data, we will also notify registered parents or guardians and relevant authorities as required by law.</p>
+          <h3>8.4 Reporting Security Issues</h3>
+          <p>To report a security vulnerability, contact <a href="mailto:security@civiclingo.com">security@civiclingo.com</a>. We take all security reports seriously and respond within 24 hours. We do not pursue legal action against researchers who report vulnerabilities in good faith.</p>
         </section>
 
         <section>
-          <h2>7. AI Coach & Automated Processing</h2>
+          <h2>9. AI Coach & Automated Processing</h2>
           <p>CivicLingo features Nova, an AI-powered civic coach that provides personalized guidance and reflection prompts.</p>
           <ul>
             <li>Conversations with Nova are processed by our AI infrastructure to generate responses. These conversations may be used in anonymized, aggregated form to improve Nova's training.</li>
