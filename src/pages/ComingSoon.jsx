@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import Countdown from '../components/Countdown'
 import WaitlistForm from '../components/WaitlistForm'
 import HamburgerMenu from '../components/HamburgerMenu'
 import logoIcon from '../assets/logo-icon.png'
@@ -51,7 +50,7 @@ function PhoneMockup() {
             <div className="phone-progress-bar">
               <div className="phone-progress-fill" style={{ width: '62%' }} />
             </div>
-            <div className="phone-progress-label">360 XP to Level 6 — Civic Builder</div>
+            <div className="phone-progress-label">360 XP to Level 6, Civic Builder</div>
           </div>
           {/* Challenge */}
           <div className="phone-challenge">
@@ -128,12 +127,12 @@ export default function ComingSoon() {
             Civic education,<br /><em>reimagined.</em>
           </h1>
           <p className="cs-subtitle">
-            The app built to help civic leaders ages 15 and up understand, engage with, and lead in civic life — one daily challenge at a time.
+            The app built to help civic leaders ages 15 and up understand, engage with, and lead in civic life, one daily challenge at a time.
           </p>
           <div className="cs-ctas">
             <motion.button
               className="cta-primary"
-              whileHover={reduce ? {} : { scale: 1.04, boxShadow: '0 12px 32px rgba(124,58,237,0.5)' }}
+              whileHover={reduce ? {} : { scale: 1.04, boxShadow: '0 12px 32px rgba(107,63,160,0.25)' }}
               whileTap={reduce ? {} : { scale: 0.97 }}
               onClick={() => waitlistRef.current?.querySelector('input')?.focus()}
             >
@@ -160,12 +159,13 @@ export default function ComingSoon() {
         </motion.div>
       </section>
 
-      {/* ── COUNTDOWN + WAITLIST STRIP ── */}
+      {/* ── LAUNCH DATE + WAITLIST STRIP ── */}
       <motion.section className="cs-strip" {...fadeUp(0)}>
         <div className="cs-strip-inner">
           <div className="cs-strip-left">
-            <p className="cs-launches">Launching in</p>
-            <Countdown />
+            <p className="cs-launches">Launching</p>
+            <div className="cs-launch-date">July 2026</div>
+            <p className="cs-launch-blurb">Join a growing community of young civic leaders building toward launch.</p>
           </div>
           <div className="cs-strip-divider" />
           <div className="cs-strip-right" ref={waitlistRef}>
@@ -180,7 +180,7 @@ export default function ComingSoon() {
         <motion.div className="cs-section-header" {...fadeUp(0)}>
           <span className="cs-eyebrow">How it works</span>
           <h2 className="cs-section-title">Three minutes a day.<br /><em>Real civic growth.</em></h2>
-          <p className="cs-section-sub">Designed around the same behavioral science that makes Duolingo work — built entirely for civic life.</p>
+          <p className="cs-section-sub">Designed around the same behavioral science that makes Duolingo work, built entirely for civic life.</p>
         </motion.div>
 
         <motion.div
@@ -191,15 +191,15 @@ export default function ComingSoon() {
           viewport={{ once: true, margin: '-60px' }}
         >
           {[
-            { num: '01', icon: '🎯', title: 'Find your civic identity', body: 'Start with a Civic Identity Assessment. Discover your archetype — Operator, Creative, Builder, Analyst, or Connector — and unlock a personalized path built around who you actually are.' },
+            { num: '01', icon: '🎯', title: 'Take the Civic Identity Assessment', body: 'Start by figuring out how you actually engage with civic life. Discover your archetype, Operator, Creative, Builder, Analyst, or Connector, and unlock a personalized path built around who you are.' },
             { num: '02', icon: '⚡', title: 'Do a daily challenge', body: 'Every day, your AI coach surfaces one challenge matched to your interests and goals. Quiz, vote on real policy, write a reflection, or take a real-world action. Earn XP and level up.' },
-            { num: '03', icon: '🌍', title: 'Step into civic life', body: 'Your coach connects what you learn to the real world — setting weekly goals, checking in on your progress, and celebrating when you take actual civic action outside the app.' },
+            { num: '03', icon: '🌍', title: 'Take real civic action', body: 'Your coach connects what you learn to the real world, setting weekly goals, checking in on your progress, and celebrating when you take actual civic action outside the app.' },
           ].map((step) => (
             <motion.div
               key={step.num}
               className="cs-step-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -4, borderColor: 'rgba(167,139,250,0.3)', transition: { duration: 0.2 } }}
+              whileHover={reduce ? {} : { y: -4, borderColor: 'rgba(107,63,160,0.22)', transition: { duration: 0.2 } }}
             >
               <span className="step-num">{step.num}</span>
               <div className="step-icon">{step.icon}</div>
@@ -230,7 +230,7 @@ export default function ComingSoon() {
             <div className="cs-feature-featured-body">
               <span className="cs-eyebrow">AI Civic Coach</span>
               <h3 className="cs-feature-featured-title">A coach who knows where you are — and where you are going.</h3>
-              <p className="cs-feature-featured-text">Your AI coach adapts to your archetype, tracks your weekly goals, checks in mid-week, and runs a reflection with you every Sunday. Not a chatbot — a personalized civic development partner.</p>
+              <p className="cs-feature-featured-text">Your AI coach adapts to your archetype, tracks your weekly goals, checks in mid-week, and runs a reflection with you every Sunday. Not a chatbot. A personalized civic development partner.</p>
               <ul className="cs-feature-list">
                 {[
                   'Sets actionable weekly civic goals with you every Monday',
@@ -257,15 +257,15 @@ export default function ComingSoon() {
           {/* 4 smaller cards */}
           {[
             { icon: '📈', title: '10 levels of civic progression', body: 'Move from Civic Newcomer to Civic Champion through 10 named levels, each representing a real stage of civic development. XP is earned through challenges, goals, coaching, and verified real-world actions.' },
-            { icon: '🏆', title: '27 badges — including Legendary', body: 'Earn badges for streaks, debate wins, real-world actions, and completing archetype-specific challenges. Legendary badges require coach verification — they cannot be gamed.' },
+            { icon: '🏆', title: '27 badges, including Legendary', body: 'Earn badges for streaks, debate wins, real-world actions, and completing archetype-specific challenges. Legendary badges require coach verification. They cannot be gamed.' },
             { icon: '👥', title: 'Civic Squads & peer debates', body: 'Form a squad of 3–5 friends, tackle challenges together, and share a collective weekly goal. Peer debates match you with another user to argue opposing civic positions.' },
-            { icon: '🔒', title: 'Safe, private, non-partisan', body: 'COPPA-compliant. No ads. Data never sold. CivicLingo teaches how to think about civic issues — not what to think. Non-partisan by design.' },
+            { icon: '🔒', title: 'Safe, private, non-partisan', body: 'COPPA-compliant. No ads. Data never sold. CivicLingo teaches how to think about civic issues, not what to think. Non-partisan by design.' },
           ].map(f => (
             <motion.div
               key={f.title}
               className="cs-feature-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.25)', transition: { duration: 0.2 } }}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(107,63,160,0.2)', transition: { duration: 0.2 } }}
             >
               <div className="cs-feature-icon">{f.icon}</div>
               <h3 className="cs-feature-title">{f.title}</h3>
@@ -296,13 +296,13 @@ export default function ComingSoon() {
             { type: 'writing', label: 'Writing', title: 'Observe something in your community that seems unfair. Describe exactly what you see.',                    xp: '+20 XP', tier: 'Tier 1 · Civic awareness' },
             { type: 'quiz',    label: 'Quiz',    title: 'What does it mean when the Supreme Court denies certiorari — and why does it matter?',                     xp: '+40 XP', tier: 'Tier 2 · Judicial process' },
             { type: 'writing', label: 'Writing', title: 'Write your personal civic mission statement — what you care about and how you plan to make a difference.', xp: '+45 XP', tier: 'Tier 2 · Civic identity' },
-            { type: 'poll',    label: 'Poll',    title: 'Real change most often happens through — elections, organizing, courts, or storytelling?',                 xp: '+10 XP', tier: 'Tier 1 · Civic strategy' },
+            { type: 'poll',    label: 'Poll',    title: 'Real change most often happens through elections, organizing, courts, or storytelling. Which one?',     xp: '+10 XP', tier: 'Tier 1 · Civic strategy' },
           ].map(c => (
             <motion.div
               key={c.title}
               className="cs-challenge-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.2)', transition: { duration: 0.18 } }}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(107,63,160,0.18)', transition: { duration: 0.18 } }}
             >
               <span className={`cs-challenge-type cs-challenge-type--${c.type}`}>{c.label}</span>
               <p className="cs-challenge-title">{c.title}</p>
@@ -336,6 +336,15 @@ export default function ComingSoon() {
               </div>
             </motion.button>
           ))}
+        </div>
+      </motion.section>
+
+      {/* ── PARTNERS ── */}
+      <motion.section className="cs-partners" {...fadeUp(0)}>
+        <p className="cs-partners-label">Backed by</p>
+        <div className="cs-partners-row">
+          <div className="cs-partner-logo">Civics Unplugged</div>
+          <div className="cs-partner-logo">BTP</div>
         </div>
       </motion.section>
 

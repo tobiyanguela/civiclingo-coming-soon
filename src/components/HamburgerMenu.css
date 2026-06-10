@@ -12,8 +12,8 @@
   gap: 5px;
   width: 44px;
   height: 44px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(26,23,20,0.05);
+  border: 1px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
   padding: 0;
@@ -23,7 +23,7 @@
   display: block;
   width: 18px;
   height: 1.5px;
-  background: rgba(255,255,255,0.75);
+  background: rgba(26,23,20,0.65);
   border-radius: 2px;
   transition: transform 0.22s ease, opacity 0.22s ease, width 0.22s ease;
   transform-origin: center;
@@ -38,7 +38,7 @@
   position: fixed;
   inset: 0;
   z-index: 90;
-  background: rgba(9,4,15,0.6);
+  background: rgba(26,23,20,0.25);
   backdrop-filter: blur(4px);
 }
 
@@ -49,12 +49,12 @@
   right: 0;
   z-index: 100;
   width: 220px;
-  background: rgba(22,14,50,0.97);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(250,248,244,0.97);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 8px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  box-shadow: 0 16px 48px rgba(26,23,20,0.12);
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -67,14 +67,14 @@
   border-radius: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255,255,255,0.75);
+  color: var(--text-secondary);
   text-decoration: none;
   transition: background 0.15s, color 0.15s;
   min-height: 48px;
 }
 .hb-link:hover {
-  background: rgba(255,255,255,0.07);
-  color: #fff;
+  background: rgba(26,23,20,0.05);
+  color: var(--text-primary);
 }
 .hb-link svg { opacity: 0.4; }
 
