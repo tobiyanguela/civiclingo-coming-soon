@@ -132,7 +132,7 @@ export default function ComingSoon() {
           <div className="cs-ctas">
             <motion.button
               className="cta-primary"
-              whileHover={reduce ? {} : { scale: 1.04, boxShadow: '0 12px 32px rgba(107,63,160,0.25)' }}
+              whileHover={reduce ? {} : { scale: 1.04, boxShadow: '0 12px 32px rgba(124,58,237,0.5)' }}
               whileTap={reduce ? {} : { scale: 0.97 }}
               onClick={() => waitlistRef.current?.querySelector('input')?.focus()}
             >
@@ -199,7 +199,7 @@ export default function ComingSoon() {
               key={step.num}
               className="cs-step-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -4, borderColor: 'rgba(107,63,160,0.22)', transition: { duration: 0.2 } }}
+              whileHover={reduce ? {} : { y: -4, borderColor: 'rgba(167,139,250,0.3)', transition: { duration: 0.2 } }}
             >
               <span className="step-num">{step.num}</span>
               <div className="step-icon">{step.icon}</div>
@@ -265,7 +265,7 @@ export default function ComingSoon() {
               key={f.title}
               className="cs-feature-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(107,63,160,0.2)', transition: { duration: 0.2 } }}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.25)', transition: { duration: 0.2 } }}
             >
               <div className="cs-feature-icon">{f.icon}</div>
               <h3 className="cs-feature-title">{f.title}</h3>
@@ -302,7 +302,7 @@ export default function ComingSoon() {
               key={c.title}
               className="cs-challenge-card"
               variants={staggerItem}
-              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(107,63,160,0.18)', transition: { duration: 0.18 } }}
+              whileHover={reduce ? {} : { y: -3, borderColor: 'rgba(167,139,250,0.2)', transition: { duration: 0.18 } }}
             >
               <span className={`cs-challenge-type cs-challenge-type--${c.type}`}>{c.label}</span>
               <p className="cs-challenge-title">{c.title}</p>

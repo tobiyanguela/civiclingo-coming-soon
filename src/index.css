@@ -1,21 +1,23 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --accent:       #6B3FA0;
-  --accent-mid:   #9B6FD0;
-  --accent-light: #C4A8F0;
-  --accent-green: #3B8A5A;
-  --accent-pink:  #C05878;
-  --bg-1:         #FAF8F4;
-  --bg-2:         #F5F1EB;
-  --bg-3:         #EDE8DF;
-  --text-primary:   #1A1714;
-  --text-secondary: rgba(26,23,20,0.65);
-  --text-muted:     rgba(26,23,20,0.40);
-  --border:         rgba(26,23,20,0.09);
-  --border-hover:   rgba(107,63,160,0.25);
-  --surface:        rgba(26,23,20,0.035);
-  --surface-hover:  rgba(26,23,20,0.06);
+  --accent:       #7C3AED;
+  --accent-mid:   #A78BFA;
+  --accent-light: #C4B5F4;
+  --accent-green: #22C55E;
+  --accent-pink:  #EC4899;
+
+  /* Solid dark surfaces — no transparency */
+  --bg:           #0B0518;
+  --surface:      #160D2E;
+  --surface-2:    #1C1238;
+  --surface-3:    #231848;
+  --border:       #2C1A55;
+  --border-hover: #4A2A8A;
+
+  --text-primary:   #FFFFFF;
+  --text-secondary: rgba(255,255,255,0.65);
+  --text-muted:     rgba(255,255,255,0.38);
 
   /* Type scale — 1.25 major third */
   --text-xs:   11px;
@@ -52,12 +54,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background:
-    radial-gradient(ellipse 80% 45% at 50% -5%,  rgba(107,63,160,0.09) 0%, transparent 70%),
-    radial-gradient(ellipse 45% 35% at 88% 78%,  rgba(192,88,120,0.06) 0%, transparent 55%),
-    radial-gradient(ellipse 40% 30% at 12% 85%,  rgba(59,138,90,0.05)  0%, transparent 50%),
-    linear-gradient(170deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
-  background-attachment: fixed;
+  background: var(--bg);
   color: var(--text-primary);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -66,22 +63,12 @@ body {
   line-height: 1.6;
 }
 
-/* Grain / paper texture overlay */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9998;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
-}
+a { color: var(--accent-mid); text-decoration: none; }
+a:hover { color: var(--accent-light); }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-mid); }
-
-/* Legal pages override — light theme */
+/* Legal pages override */
 body:has(.legal-page) {
-  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%) !important;
+  background: #160D2E !important;
 }
 
 /* ── Global touch targets ── */
